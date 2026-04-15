@@ -727,10 +727,7 @@ def get_questions():
     grade = max(1, min(5, grade))
     
     questions = generate_questions(grade, count)
-    # Strip answer before sending to client
-    client_qs = [{k: v for k, v in q.items() if k != "answer"} for q in questions]
-    # Store answer key server-side in a temp session (we verify on submit)
-    return jsonify({"questions": client_qs, "total": len(client_qs), "grade": grade})
+    return jsonify({"questions": questions, "total": len(questions), "grade": grade})
 
 
 @app.route("/api/submit", methods=["POST"])
