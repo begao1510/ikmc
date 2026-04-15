@@ -1,0 +1,13 @@
+{
+  "minh_huy": {
+    "id": "minh_huy",
+    "name": "Minh Huy",
+    "grade": 1,
+    "created": "2026-03-27",
+    "sessions": [],
+    "vouchers": [],
+    "total_tests": 0,
+    "total_correct": 0,
+    "total_questions": 0
+  }
+}
