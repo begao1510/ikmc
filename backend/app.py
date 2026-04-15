@@ -10,7 +10,7 @@ import random, json, os, math
 from datetime import datetime, date
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://ikmc.vercel.app", "http://localhost:3000"])
 
 DATA_DIR = os.path.dirname(__file__)
 STUDENTS_FILE = os.path.join(DATA_DIR, "students.json")
